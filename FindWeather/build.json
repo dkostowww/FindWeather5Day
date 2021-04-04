@@ -1,0 +1,11 @@
+{
+     "android": {
+      "release": {
+        "keystore": "c:\\android-key-1.keystore",
+        "storePassword": "Mit@chet0",
+        "alias": "dkostowww",
+        "password": "Mit@chet0",
+        "keystoreType": ""
+      }
+     }
+ }
