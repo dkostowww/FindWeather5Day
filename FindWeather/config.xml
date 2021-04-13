@@ -105,4 +105,5 @@
   </platform>
   <plugin name="cordova-plugin-geolocation" spec="~2.4.3" />
   <access origin="http://api.openweathermap.org/" />
+  <access origin="http://openweathermap.org/img" />
 </widget>

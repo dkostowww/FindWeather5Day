@@ -119,17 +119,18 @@ function getGeneralDates(results) {
 }
 
 function assignFirstDateData(...data) {
+    console.log(data);
     $(document).ready(function () {
         for (var i = 0; i < data.length; i++) {
-            var block = '<br /><li>Период: ' + data[i].dt_txt + '<ul><li><span id="summary1"><span id="temperature1"></span>Температура: ' + data[i].main.temp + '°C <img src="" /></span></li><li>Вятър: <span id="wind1">' + data[i].wind.speed + '</span> възела</li><li>Влажност: <span id="humidity1">' + data[i].main.humidity + '</span> %</li><li>Видимост: <span id="visibility1">' + data[i].visibility + '</span></li></ul ></li>';
-           $('#title1').append(block);
+            var block = '<br /><li>Период: ' + data[i].dt_txt + '<ul><li><span id="summary1"><span id="temperature1"></span>Температура: ' + data[i].main.temp + '°C <img src="http://openweathermap.org/img/wn/' + data[i].weather[0].icon + '.png" /></span></li><li>Вятър: <span id="wind1">' + data[i].wind.speed + '</span> възела</li><li>Влажност: <span id="humidity1">' + data[i].main.humidity + '</span> %</li><li>Видимост: <span id="visibility1">' + data[i].visibility + '</span></li></ul ></li>';
+            $('#title1').append(block);
         }
     });
 }
 function assignSecondDateData(...data) {
     $(document).ready(function () {
         for (var i = 0; i < data.length; i++) {
-            var block = '<br /><li>Период: ' + data[i].dt_txt + '<ul><li><span id="summary1"><span id="temperature1"></span>Температура: ' + data[i].main.temp + '°C <img src="" /></span></li><li>Вятър: <span id="wind1">' + data[i].wind.speed + '</span> възела</li><li>Влажност: <span id="humidity1">' + data[i].main.humidity + '</span> %</li><li>Видимост: <span id="visibility1">' + data[i].visibility + '</span></li></ul ></li>';
+            var block = '<br /><li>Период: ' + data[i].dt_txt + '<ul><li><span id="summary1"><span id="temperature1"></span>Температура: ' + data[i].main.temp + '°C <img src="http://openweathermap.org/img/wn/' + data[i].weather[0].icon + '.png" /></span></li><li>Вятър: <span id="wind1">' + data[i].wind.speed + '</span> възела</li><li>Влажност: <span id="humidity1">' + data[i].main.humidity + '</span> %</li><li>Видимост: <span id="visibility1">' + data[i].visibility + '</span></li></ul ></li>';
             $('#title2').append(block);
         }
     });
@@ -137,7 +138,7 @@ function assignSecondDateData(...data) {
 function assignThirdDateData(...data) {
     $(document).ready(function () {
         for (var i = 0; i < data.length; i++) {
-            var block = '<br /><li>Период: ' + data[i].dt_txt + '<ul><li><span id="summary1"><span id="temperature1"></span>Температура: ' + data[i].main.temp + '°C <img src="" /></span></li><li>Вятър: <span id="wind1">' + data[i].wind.speed + '</span> възела</li><li>Влажност: <span id="humidity1">' + data[i].main.humidity + '</span> %</li><li>Видимост: <span id="visibility1">' + data[i].visibility + '</span></li></ul ></li>';
+            var block = '<br /><li>Период: ' + data[i].dt_txt + '<ul><li><span id="summary1"><span id="temperature1"></span>Температура: ' + data[i].main.temp + '°C <img src="http://openweathermap.org/img/wn/' + data[i].weather[0].icon + '.png" /></span></li><li>Вятър: <span id="wind1">' + data[i].wind.speed + '</span> възела</li><li>Влажност: <span id="humidity1">' + data[i].main.humidity + '</span> %</li><li>Видимост: <span id="visibility1">' + data[i].visibility + '</span></li></ul ></li>';
             $('#title3').append(block);
         }
     });
@@ -145,7 +146,7 @@ function assignThirdDateData(...data) {
 function assignFourthDateData(...data) {
     $(document).ready(function () {
         for (var i = 0; i < data.length; i++) {
-            var block = '<br /><li>Период: ' + data[i].dt_txt + '<ul><li><span id="summary1"><span id="temperature1"></span>Температура: ' + data[i].main.temp + '°C <img src="" /></span></li><li>Вятър: <span id="wind1">' + data[i].wind.speed + '</span> възела</li><li>Влажност: <span id="humidity1">' + data[i].main.humidity + '</span> %</li><li>Видимост: <span id="visibility1">' + data[i].visibility + '</span></li></ul ></li>';
+            var block = '<br /><li>Период: ' + data[i].dt_txt + '<ul><li><span id="summary1"><span id="temperature1"></span>Температура: ' + data[i].main.temp + '°C <img src="http://openweathermap.org/img/wn/' + data[i].weather[0].icon + '.png" /></span></li><li>Вятър: <span id="wind1">' + data[i].wind.speed + '</span> възела</li><li>Влажност: <span id="humidity1">' + data[i].main.humidity + '</span> %</li><li>Видимост: <span id="visibility1">' + data[i].visibility + '</span></li></ul ></li>';
             $('#title4').append(block);
         }
     });
@@ -153,7 +154,7 @@ function assignFourthDateData(...data) {
 function assignFifthDateData(...data) {
     $(document).ready(function () {
         for (var i = 0; i < data.length; i++) {
-            var block = '<br /><li>Период: ' + data[i].dt_txt + '<ul><li><span id="summary1"><span id="temperature1"></span>Температура: ' + data[i].main.temp + '°C <img src="" /></span></li><li>Вятър: <span id="wind1">' + data[i].wind.speed + '</span> възела</li><li>Влажност: <span id="humidity1">' + data[i].main.humidity + '</span> %</li><li>Видимост: <span id="visibility1">' + data[i].visibility + '</span></li></ul ></li>';
+            var block = '<br /><li>Период: ' + data[i].dt_txt + '<ul><li><span id="summary1"><span id="temperature1"></span>Температура: ' + data[i].main.temp + '°C <img src="http://openweathermap.org/img/wn/' + data[i].weather[0].icon + '.png" /></span></li><li>Вятър: <span id="wind1">' + data[i].wind.speed + '</span> възела</li><li>Влажност: <span id="humidity1">' + data[i].main.humidity + '</span> %</li><li>Видимост: <span id="visibility1">' + data[i].visibility + '</span></li></ul ></li>';
             $('#title5').append(block);
         }
     });

@@ -1,5 +1,5 @@
-body{
-    background-color: #D9B48FFF;
+body {
+    background-color: #F0F8FF;
 }
 
 .not-displayed {
@@ -40,5 +40,9 @@ form {
 }
 
 #title1, #title2, #title3, #title4, #title5 {
-    background-color: #F0F8FF;
+    background-color: #D9B48FFF;
+}
+
+img {
+    margin-top: -8%;
 }
